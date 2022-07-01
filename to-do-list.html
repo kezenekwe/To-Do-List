@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="to-do-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- 
+    Main Features:
+    -Enter a task in a text box
+    -add that task to the bottom of the list 
+    -remove a task by clicking the x button 
+    -strikethrough/check task by clicking on it
+    -undo strikethrough/checkmark by clicking again
+-->
+<div class="header">
+    <h2>My To Do List</h2>
+        <div class="input">
+            <input type="text" placeholder="Task..." class="textbox">
+            <button class="addbtn">Add</button>
+        </div>
+    </div>
+</div>
+<div class="newtasks">
+    <ul class="items">
+        <!-- Hard coded tasks -->
+        <li class="listitem">
+            Make bed
+            <button class="btn">x</button>
+            <a href="#" class="check"><i class="fa fa-fw fa-check"></i></a>
+        </li>
+        <li class="listitem">
+            Drink water
+            <button class="btn">x</button>
+            <a href="#" class="check"><i class="fa fa-fw fa-check"></i></a>
+        </li>
+        <li class="listitem">
+            Brush teeth
+            <button class="btn">x</button>
+            <a href="#" class="check"><i class="fa fa-fw fa-check"></i></a>
+        </li>
+    </ul>
+</div>
+<script src="to-do-list.js"></script>
+</body>
+</html>
